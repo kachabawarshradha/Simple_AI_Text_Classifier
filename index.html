@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple AI Text Classifier</title>
+</head>
+<body>
+    <h2>Enter a sentence:</h2>
+    <form method="post">
+        <input type="text" name="text" required>
+        <button type="submit">Classify</button>
+    </form>
+    {% if result %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
